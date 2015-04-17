@@ -21,7 +21,11 @@ module.exports = new (function() {
     testCases['wait for peer to disconnect'] = function (client) {
       client
         .pause(1000)
-        .waitForElementNotPresent('#remotes video', 10000);
+        .getValue('#createChannelId', function(result) {
+          client.setValue('#connectChannelId', result);
+        })
+        .click('#connectChannel')
+        .waitForElementNotPresent('#calleeLocalVideo', 10000);
     };
   } else {
     testCases.suspend = function (client) {
