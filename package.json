@@ -1,19 +1,19 @@
 {
-  "name": "nightwatch",
-  "description": "Sample project for WebRTC testing",
+  "name": "PlayRTC-Desktop-E2E-Test",
+  "description": "PlayRTC-Desktop-E2E-Test",
   "version": "0.0.1",
   "author": {
-    "name": "Andrei Rusu",
-    "email": "andrei@nightwatchjs.org"
+    "name": "PlayRTC",
+    "email": "playrtc@sk.com"
   },
-  "homepage": "http://nightwatchjs.org",
+  "homepage": "http://www.playrtc.com",
   "licenses": {
-    "type": "MIT",
-    "url": "https://raw.github.com/beatfactor/nightwatch/master/LICENSE"
+    "type": "Copyright",
+    "url": "https://raw.github.com/PlayRTC/PlayRTC-Desktop-E2E-Test/blob/master/LICENSE"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:beatfactor/nightwatch-webrtcdemo.git"
+    "url": "git@github.com:PlayRTC/PlayRTC-Desktop-E2E-Test.git"
   },
   "dependencies": {
     "nightwatch": "~0.5.35"

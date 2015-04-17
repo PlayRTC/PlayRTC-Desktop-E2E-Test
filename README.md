@@ -1,7 +1,4 @@
-- https://github.com/beatfactor/nightwatch-webrtcdemo
-- http://nightwatchjs.org/blog/
-
-# PlayRTC-Desktop-E2E-test
+# PlayRTC-Desktop-E2E-Test
 
 아래를 참고하여 PlayRTC 데스크탑 환경에서의 End to End 테스트 실행기를 작성
 
@@ -26,3 +23,5 @@ $ npm install
 ```sh
 $ ./bin/nightwatch.js --env chrome,chrome
 ```
+
+COPYRIGHT (c) 2015 SK TELECOM CO. LTD. ALL RIGHTS RESERVED.
