@@ -4,7 +4,7 @@ module.exports = new(function() {
 
   testCases['opening the browser and navigating to the url'] = function(client) {
     client
-      .url('http://playrtc.github.io/PlayRTC-Javascript-Code-Samples/basis/p2p.html')
+      .url('http://playrtc.github.io/PlayRTC-Javascript-Code-Samples/basic/p2p.html')
       .waitForElementVisible('body', 1000);
   };
 
@@ -14,14 +14,14 @@ module.exports = new(function() {
         .waitForElementVisible('#callerLocalVideo', 1500)
         .click('#createChannel')
         .pause(5000)
-        .waitForClientConnected('#callerLocalVideo', 5000)
-        .getValue('#createChannelId', function(result) {
-          client.setValue('#connectChannelId', result.value);
-        });
+        .waitForClientConnected('#callerLocalVideo', 5000);
     };
 
     testCases['wait for clients to become connected 2'] = function(client) {
       client
+        .getValue('#createChannelId', function(result) {
+          client.setValue('#connectChannelId', result.value);
+        })
         .waitForElementVisible('#callerRemoteVideo', 1500)
         .click('#connectChannel')
         .pause(5000)
