@@ -34,14 +34,23 @@ $ git clone https://github.com/playrtc/playrtc-desktop-e2e-test
 $ cd playrtc-desktop-e2e-test
 $ npm install
 ```
-
-- 2개의 크롬 피어를 통해 테스트
-```sh
-$ ./bin/nightwatch.js --env chrome,chrome
+- 단일 페이지 예제 테스트
+```Shell
+$ ./bin/nightwatch.js --env chrome,chrome -g single-page
 ```
 
-```dos
-c:\> node ./bin/nightwatch.js --env chrome,chrome
+```PowerShell
+c:\> node ./bin/nightwatch.js --env chrome,chrome -g single-page
+```
+
+
+- 다중 페이지 예제 테스트
+```Shell
+$ ./bin/nightwatch.js --env chrome,chrome -g seperate-page
+```
+
+```PowerShell
+c:\> node ./bin/nightwatch.js --env chrome,chrome -g seperate-page
 ```
 
 COPYRIGHT (c) 2015 SK TELECOM CO. LTD. ALL RIGHTS RESERVED.

@@ -2,7 +2,7 @@ module.exports = new(function() {
   var firstClient = process.env.__NIGHTWATCH_ENV_KEY == 'chrome_1';
   var testCases = this;
 
-  testCases['opening the browser and navigating to the url'] = function(client) {
+  testCases['opening the browser and navigating to the url',process.env.__NIGHTWATCH_ENV_KEY] = function(client) {
     client
       .url('http://playrtc.github.io/PlayRTC-Javascript-Code-Samples/basic/p2p.html')
       .waitForElementVisible('body', 1000);
