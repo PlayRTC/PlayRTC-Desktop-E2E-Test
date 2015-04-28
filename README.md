@@ -6,6 +6,11 @@
 - [Nightwatch WebRTC Demo](https://github.com/beatfactor/nightwatch-webrtcdemo)
 - [Nightwatch.js - Daliworks Inc Blog](http://techblog.daliworks.net/Nightwatchjs/)
 
+## 환경
+데스크톱 크롬 브라우저
+
+- 파이어폭스의 경우 크롬의 'use-fake-device-for-media-stream', 'use-fake-ui-for-media-stream'와 같은 옵션을 제공하지 않아 현재로는 자동화된 테스트는 어려움
+
 ## 테스트 준비
 
 - [Node.js](http://nodejs.org) 설치
@@ -19,6 +24,7 @@
 - [브라우저 드라이버](http://www.seleniumhq.org/download/) 설치
   - Selenium 서버와 브라우저의 통신을 위한 [The WebDriver Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol)설치 필요
   - [Chrome Driver 저장소](http://chromedriver.storage.googleapis.com/index.html)에서 운영체제에 맞는 `chromedriver` 다운로드 받고 `bin` 폴더에 넣기
+
 
 ## 테스트 수행
 
