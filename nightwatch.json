@@ -10,7 +10,7 @@
     "server_path" : "./bin/selenium-server-standalone-2.45.0.jar",
     "log_path" : "",
     "cli_args" : {
-      "webdriver.chrome.driver" : "bin/chromedriver",
+      "webdriver.chrome.driver" : "./bin/chromedriver.exe",
       "webdriver.firefox.profile" : "default"
     }
   },
