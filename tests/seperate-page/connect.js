@@ -4,7 +4,7 @@ module.exports = new(function() {
 
   testCases['opening the browser and navigating to the url',process.env.__NIGHTWATCH_ENV_KEY] = function(client) {
     client
-      .url('http://playrtc.github.io/PlayRTC-Javascript-Code-Samples/basic/p2p.html')
+      .url('https://playrtc.github.io/PlayRTC-Javascript-Code-Samples/basic/mediastream-video.html')
       .waitForElementVisible('body', 1000);
   };
 

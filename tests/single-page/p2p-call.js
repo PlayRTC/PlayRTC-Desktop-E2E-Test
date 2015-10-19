@@ -1,7 +1,7 @@
 module.exports = {
   'go basic p2p call page' : function (browser) {
     browser
-      .url('http://playrtc.github.io/PlayRTC-Javascript-Code-Samples/basic/p2p-call.html')
+      .url('https://playrtc.github.io/PlayRTC-Javascript-Code-Samples/basic/calling.html')
       .waitForElementVisible('body', 1000);
   },
 
