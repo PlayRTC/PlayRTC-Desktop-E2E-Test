@@ -110,5 +110,5 @@ node_modules
 .project
 *.idea
 selenium-debug.log
-bin/chromedriver
+bin/chromedriver.exe
 bin/selenium-server-standalone-*
