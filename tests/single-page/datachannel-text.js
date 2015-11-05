@@ -7,10 +7,8 @@ module.exports = {
 
   'create channel and join' : function (browser) {
     browser
-      .waitForElementVisible('#callerLocalVideo', 1500)
       .click('#createChannel')
-      .pause(5000)
-      .waitForClientConnected('#callerLocalVideo', 5000);
+      .pause(5000);
   },
 
   'join channel' : function (browser) {
@@ -18,9 +16,7 @@ module.exports = {
       .getValue('#createChannelId', function(result) {
         browser.setValue('#connectChannelId', result.value);
       })
-      .waitForElementVisible('#callerRemoteVideo', 1500)
-      .click('#connectChannel')
-      .waitForClientConnected('#callerRemoteVideo', 10000)
+      .click('#connectChannel');
   },
 
   'write english message' : function (browser) {
